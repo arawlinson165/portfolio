@@ -1,0 +1,128 @@
+/*makes it scroll nicely*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*center header and make divider*/
+h1 {
+    text-align: center;
+    border-bottom: 5px dashed darkolivegreen;
+    padding-bottom: 8px;
+}
+
+/*set margins to auto, put on left (block), and allow shrink*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    /*width: 400px; */
+    flex: 0 1 400px;
+}
+
+/*make it bigger when you hover cursor*/
+img:hover {
+    scale: 1.05;
+    transition-duration: 0.1s;
+}
+
+/* The code below centers the text of all h3's on the page. */
+h3 {
+    text-align: center;
+}
+
+/*align sections left and allow wrap*/
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/*format sections and allow side by side items within*/
+.section {
+    border: 1px rgb(0, 0, 155) ridge;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*class for images for side by side elements*/
+.section-image {
+    width: 400px;
+    margin-right: 20px;
+}
+
+/*text class so it can go next to images*/
+.section-text {
+    flex: 1 1;
+}
+
+/*set background to ugly beige and Apple font :^| */
+body {
+    /*background-color: rgb(216, 215, 255);*/
+    background-color: lightgoldenrodyellow;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+/*navbar with flex icons tried to make static but DID NOT WORK*/
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: darkolivegreen;
+    padding: 8px;
+    margin: 8px;
+    color: black;
+    border-radius: 8px;
+    align-items: center;
+    position: sticky;
+}
+
+/*make icons clickable and format correctly*/
+.navbar-icon {
+    display: flex;
+    justify-content: flex-start;
+    background-color: lightgoldenrodyellow;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-color: black;
+    border-radius: 8px;
+}
+
+/*make navbar icon big on hover*/
+.navbar-icon:hover {
+    scale: 1.05;
+    transition-duration: 0.1s;
+}
+
+/*make hyperlinks look like normal text*/
+a {
+    color: black;
+    text-decoration: none;
+    font-size: auto;
+}
+
+/*make it bold DOES NOT WORK*/
+a :hover {
+    font-weight: bolder;
+}
+
+/*format bottom bar*/
+.bottom-bar {
+    display: block;
+    text-align: center;
+    background-color: rgb(0, 0, 255);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 1px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    flex-grow: 1;
+}
