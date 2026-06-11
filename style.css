@@ -2,8 +2,6 @@
 html{
     scroll-behavior: smooth;
 }
-/*makes it scroll nicely*/
-
 
 /*center header and make divider*/
 h1 {
@@ -62,91 +60,13 @@ h3 {
     flex: 1 1;
 }
 
-:root{
-    --green: #2f8f4e;
-    --green-dark: #1f5e36;
-    --brown: #b88a52;
-    --bg: #f6f5f2;
-    --card: #ffffff;
-    --muted: #6b6b6b;
-}
-
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    margin:0;
-    background:var(--bg);
-    color:#15392b;
-    -webkit-font-smoothing:antialiased;
-}
-.container{max-width:1100px;margin:0 auto;padding:0 16px}
-
-/* Header */
-.site-header{position:sticky;top:0;backdrop-filter:blur(6px);background:rgba(255,255,255,0.85);box-shadow:0 2px 6px rgba(0,0,0,0.06);z-index:40}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.logo{font-weight:700;color:var(--green-dark);text-decoration:none}
-.main-nav a{margin-left:18px;color:var(--green-dark);text-decoration:none;padding:6px 8px;border-radius:6px;transition:background .18s,transform .12s}
-.main-nav a:hover{background:rgba(47,143,78,0.08);transform:translateY(-2px)}
-.nav-toggle{display:none;background:none;border:0;font-size:20px}
-
-/* Hero */
-.hero{padding:72px 0;background:linear-gradient(135deg,var(--green) 0%, #8fbf8a 40%, var(--brown) 100%);color:white}
-.hero-inner{display:flex;flex-direction:column;gap:12px}
-.hero h1{font-size:2.1rem;margin:0}
-.tagline{opacity:0.95}
-.cta{display:inline-block;margin-top:8px;background:rgba(255,255,255,0.12);padding:10px 14px;border-radius:8px;color:white;text-decoration:none;box-shadow:0 6px 18px rgba(11,44,26,0.12);transition:transform .15s,background .15s}
-.cta:hover{transform:translateY(-3px);background:rgba(255,255,255,0.18)}
-
-/* Sections */
-.section{padding:48px 0}
-.about p{max-width:70ch;color:rgba(21,57,43,0.9)}
-.muted{color:var(--muted);margin-bottom:12px}
-
-/* Projects grid */
-.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-.project-card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(23,44,28,0.08);cursor:pointer;display:block;transition:transform .18s,box-shadow .18s;outline:none}
-.project-card summary{list-style:none;margin:0;padding:0;display:block;cursor:pointer}
-.project-card summary::-webkit-details-marker{display:none}
-.project-card summary:focus{outline:2px solid rgba(47,143,78,0.18);outline-offset:3px}
-.project-card:hover{transform:translateY(-6px)}
-.project-media{position:relative;height:220px;background:#e9efe6}
-.project-media iframe{width:100%;height:100%;border:0;display:block;filter:blur(6px) saturate(.9);transition:filter .28s,opacity .28s;pointer-events:none}
-.project-media .overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;background:linear-gradient(180deg,rgba(21,57,43,0.35),rgba(0,0,0,0.35));font-weight:600;pointer-events:none}
-.project-body{padding:14px}
-.tags{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
-.tags span{background:rgba(47,143,78,0.08);color:var(--green-dark);padding:6px 8px;border-radius:999px;font-size:0.85rem}
-
-/* Revealed state using details[open] */
-details.project-card[open] .project-media iframe{filter:none;pointer-events:auto}
-details.project-card[open] .project-media .overlay{display:none}
-
-/* Make summary content match previous project-body spacing */
-.project-card .project-body{padding:14px}
-
-/* CSS-only nav toggle for small screens */
-#nav-toggle:checked ~ .main-nav{display:flex}
-
-
-/* Contact buttons */
-.contact-buttons{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--green);color:white;text-decoration:none;box-shadow:0 8px 20px rgba(47,143,78,0.12);transition:transform .12s,box-shadow .12s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(47,143,78,0.18)}
-
-/* Footer */
-.site-footer{padding:20px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(16,16,16,0.04)}
-
-/* Responsive */
-@media (max-width:900px){
-    .project-grid{grid-template-columns:repeat(2,1fr)}
-    .hero{padding:56px 0}
-}
-@media (max-width:640px){
-    .project-grid{grid-template-columns:1fr}
-    .main-nav{display:none}
-    .nav-toggle{display:block}
-    .main-nav.open{display:flex;position:absolute;left:16px;right:16px;top:64px;background:rgba(255,255,255,0.96);padding:12px;border-radius:8px;flex-direction:column;gap:8px}
-    .hero h1{font-size:1.6rem}
+/*set background to ugly beige and Apple font :^| */
+body {
+    /*background-color: rgb(216, 215, 255);*/
+    background-color: lightgoldenrodyellow;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 
 /*navbar with flex icons tried to make static but DID NOT WORK*/
