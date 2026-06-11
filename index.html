@@ -1,35 +1,129 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Portfolio — Your Name</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="site-header" role="banner">
+            <div class="container header-inner">
+                <a class="logo" href="#">Your Name</a>
 
-<head>
-    <title>Alex Rawlinson</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+                <!-- CSS-only nav toggle -->
+                <input id="nav-toggle" type="checkbox" hidden />
+                <label for="nav-toggle" class="nav-toggle" aria-hidden="true">☰</label>
 
-<body>
-    <div class="navbar">
-        <a href="index.html" class = "navbar-icon" style="border-radius: 100%; aspect-ratio: 1; text-align: center; align-items: center;">AR</a>
-        <a href="about-me.html" class="navbar-icon">About Me</a>
-        <a href="contact.html" class="navbar-icon">Contact</a>
-    </div>
-
-    <h1>Home</h1>
-
-    <div>
-        <div class="section">
-            <div class="section-text">
-                <h3 style="margin-right: 8px">"Impressive quote" -Alex Rawlinson</h3>
-                <p>Stuff about me</p>
+                <nav class="main-nav" role="navigation" aria-label="Primary">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
-        </div>
+        </header>
 
-        <div class="section">
-            <div class="section-text">
-                <h3 style="margin-right: 8px">Website for change</h3>
-                <embed type="text/html" src="embedded-websites\int-u2-project-23-24-starter-code-2\index.html" style="flex: 1 1 600px;">
-            </div>
-        </div>
+        <main>
+            <section id="hero" class="hero">
+                <div class="container hero-inner">
+                    <h1>Your Name</h1>
+                    <p class="tagline">Beginner web developer — building clean, accessible experiences.</p>
+                    <a class="cta" href="#projects">See Projects</a>
+                </div>
+            </section>
 
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2>About</h2>
+                    <p>
+                        Hi — I'm a beginner web developer focused on building simple,
+                        accessible, and responsive websites. I enjoy outdoor-inspired
+                        designs and clean interfaces. This portfolio template uses semantic
+                        HTML5, plain CSS, and a tiny bit of JavaScript.
+                    </p>
+                </div>
+            </section>
 
-</body>
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <p class="muted">Click a project to reveal and interact with the embedded site.</p>
+                    <div class="project-grid">
+
+                        <details class="project-card">
+                            <summary class="project-summary">
+                                <div class="project-body">
+                                    <h3>Embedded Project 1</h3>
+                                    <p>A starter project included in the workspace. Click to interact.</p>
+                                    <div class="tags">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JS</span>
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="project-media">
+                                <div class="overlay">Click to open</div>
+                                <iframe src="embedded-websites/int-u2-project-23-24-starter-code-2/index.html" title="Project 1 preview" loading="lazy" sandbox></iframe>
+                            </div>
+                        </details>
+
+                        <details class="project-card">
+                            <summary class="project-summary">
+                                <div class="project-body">
+                                    <h3>Project 2 (placeholder)</h3>
+                                    <p>Replace this with another local project or an embedded file.</p>
+                                    <div class="tags">
+                                        <span>Demo</span>
+                                        <span>Accessible</span>
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="project-media">
+                                <div class="overlay">Click to open</div>
+                                <iframe src="embedded-websites/int-u2-project-23-24-starter-code-2/index.html" title="Project 2 preview" loading="lazy" sandbox></iframe>
+                            </div>
+                        </details>
+
+                        <details class="project-card">
+                            <summary class="project-summary">
+                                <div class="project-body">
+                                    <h3>Project 3 (placeholder)</h3>
+                                    <p>Use this card to embed another site or file from your workspace.</p>
+                                    <div class="tags">
+                                        <span>HTML</span>
+                                        <span>Project</span>
+                                    </div>
+                                </div>
+                            </summary>
+                            <div class="project-media">
+                                <div class="overlay">Click to open</div>
+                                <iframe src="embedded-websites/int-u2-project-23-24-starter-code-2/index.html" title="Project 3 preview" loading="lazy" sandbox></iframe>
+                            </div>
+                        </details>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <p class="muted">I'd love to hear from you — reach out by email or on GitHub/LinkedIn.</p>
+                    <div class="contact-buttons">
+                        <a class="btn" href="mailto:you@example.com">Email</a>
+                        <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2026 Your Name. All rights reserved.</small>
+      </div>
+    </footer>
+
+  </body>
 </html>
