@@ -22,6 +22,10 @@ h1 {
 .map-container {
     position: relative;
     display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
 }
 
 .map {
@@ -33,17 +37,26 @@ h1 {
 .map-button{
     position: absolute;
     z-index: 50;
+
+    height: 1vw;
+    width: 80px;
     
 
-    background-color: rgba(250, 250, 210, 0.349);
+    background: rgba(250, 250, 210, 0.8);
     color: rgb(0, 0, 0);
-    padding: 8px;
-    margin-left: 8px;
-    margin-right: 8px;
+    padding: 8px 12px;
     cursor: pointer;
     border-color: black;
     border-radius: 8px;
-    gap: 6px;
+    display:inline-flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.map-button.contact{
+    top: 15%;
+    left: 20%;
+    
 }
 
 /*set margins to auto, put on left (block), and allow shrink*/
