@@ -1,6 +1,15 @@
 /*makes it scroll nicely*/
-html{
+html {
     scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
 }
 
 /*center header and make divider*/
@@ -8,6 +17,33 @@ h1 {
     text-align: center;
     border-bottom: 5px dashed darkolivegreen;
     padding-bottom: 8px;
+}
+
+.map-container {
+    position: relative;
+    display: block;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+}
+
+.map-button{
+    position: absolute;
+    z-index: 50;
+    
+
+    background-color: rgba(250, 250, 210, 0.349);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-color: black;
+    border-radius: 8px;
+    gap: 6px;
 }
 
 /*set margins to auto, put on left (block), and allow shrink*/
@@ -21,10 +57,10 @@ img {
 }
 
 /*make it bigger when you hover cursor*/
-img:hover {
+/*img:hover {
     scale: 1.05;
     transition-duration: 0.1s;
-}
+}  */
 
 /* The code below centers the text of all h3's on the page. */
 h3 {
