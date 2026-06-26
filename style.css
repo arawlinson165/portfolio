@@ -82,6 +82,7 @@ h1 {
     cursor: pointer;
 }
 
+
 .video-topper{
     position: absolute;
     top: 0.5%;
@@ -94,7 +95,9 @@ h1 {
 
     color: white;
 
-}
+}  
+
+
 
 /*set margins to auto, put on left (block), and allow shrink*/
 img {
