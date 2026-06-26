@@ -14,9 +14,9 @@ window.addEventListener("scroll", function () {
     if (video.duration) {
         scrollFraction = -1.5 * (scroll.getBoundingClientRect().top / scroll.clientHeight);
         video.currentTime = video.duration * scrollFraction;
-        aboutButton.style.left = (scrollFraction * 100 - 25) + "%";
-        projectsButton.style.left = (scrollFraction * 100 - 65) + "%";
-        contactButton.style.left = (scrollFraction * 100 - 105) + "%";
+        aboutButton.style.left = (scrollFraction * 100 - 30) + "%";
+        projectsButton.style.left = (scrollFraction * 100 - 70) + "%";
+        contactButton.style.left = (scrollFraction * 100 - 110) + "%";
 
         if (scrollFraction > 1.34) {
             aboutButton.style.opacity = 0;
