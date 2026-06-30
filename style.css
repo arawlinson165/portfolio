@@ -4,28 +4,29 @@ html {
     font-size: larger;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    color:black;
+    color: black;
 }
 
 /*set background to ugly beige and Apple font :^| */
 body {
     font-size: larger;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
 }
 
-.gradient{
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.877) 10%); 
-    position:relative;
+.gradient {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.877) 10%);
+    position: relative;
     /* background-color: #fbfbfbb8; */
     padding: 8px;
-    z-index: 20;
+    z-index: 25;
 }
 
 
@@ -39,22 +40,24 @@ h1 {
     z-index: 10;
 }
 
-.scroll-container{
+.scroll-container {
     height: 400vh;
     position: relative;
     background-color: black;
+    display: flex;
+    justify-content: center;
     /* isolation: isolate; */
 }
 
-.video-container{
-    position:fixed;
+.video-container {
+    position: fixed;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     z-index: 0;
 }
 
-.video{
+.video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -62,7 +65,7 @@ h1 {
     z-index: 0;
 }
 
-.video-navbtn{
+.video-navbtn {
     position: absolute;
     left: -30%;
     top: 35%;
@@ -82,25 +85,43 @@ h1 {
 
     opacity: 1;
     cursor: pointer;
+    /* transition: 0.2s ease; */
+}
+
+.video-navbtn:hover {
+    transform: scale(1.08);
 }
 
 
-.video-topper{
+.video-topper {
     position: absolute;
-    top: 0.5%;
+    top: 1%;
     z-index: 30;
     font-size: 2vw;
 
     /* REUSE THIS - move it to center then back so it's really centered */
-    left: 50%;
-    transform: translate(-50%);
+
     text-align: center;
 
     color: white;
-    mix-blend-mode: difference;
-    
+    /* mix-blend-mode: difference; */
 
-}  
+    /* alternate makes it go back and forth */
+    animation: upDown 0.8s ease-in-out infinite alternate;
+
+
+}
+
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+}
 
 
 
@@ -120,8 +141,9 @@ img {
     transition-duration: 0.1s;
 }  */
 
-/* The code below centers the text of all h3's on the page. */
-h3 {
+
+h3,
+h2 {
     text-align: center;
     z-index: 10;
 }
@@ -147,7 +169,7 @@ h3 {
     flex-wrap: wrap;
 
     /* learning area */
-    
+
     padding: 2%;
     align-items: center;
     z-index: 3;
@@ -167,7 +189,7 @@ h3 {
     z-index: 4;
 }
 
-.slideshow-container{
+.slideshow-container {
     display: flex;
     border: 3px black solid;
     height: 150px;
@@ -184,7 +206,10 @@ h3 {
     color: black;
     border-radius: 8px;
     align-items: center;
+
     position: sticky;
+
+    overflow:hidden;
     z-index: 100;
 
     top: 0;
@@ -235,7 +260,7 @@ a :hover {
     z-index: 10;
 }
 
-.project-card{
+.project-card {
     width: auto;
     border-radius: 8px;
     border: 2px black solid;
@@ -243,45 +268,66 @@ a :hover {
     text-align: center;
     background-color: rgba(240, 248, 255, 0.4);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-card:hover{
+.project-card:hover {
     transform: translateY(-3px);
     box-shadow: 6px 9px rgba(0, 0, 0, 0.15);
 }
 
-.project-image{
+.project-image {
     width: 100%;
-    max-height: 30vh;
+    height: 30vh;
     border-radius: 6px;
     overflow: hidden;
     object-fit: cover;
     object-position: center;
 
+    /* try this */
+    position: relative;
 }
 
 /* Modified version of project cards */
-.resume-card{
-    width: 100%;
+.resume-card {
+    width: auto;
     border-radius: 8px;
     border: 2px black solid;
     box-sizing: border-box;
     text-align: center;
     background-color: rgba(240, 248, 255, 0.4);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-card:hover{
+.resume-image {
+    width: 100%;
+    height: 50vh;
+    border-radius: 6px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+
+    /* try this */
+}
+
+.resume-card:hover {
     transform: translateY(-3px);
     box-shadow: 6px 9px rgba(0, 0, 0, 0.15);
 }
 
-.resume-icon{
+.resume-icon {
     max-width: 10%;
     border-radius: 100%;
     aspect-ratio: 1;
+    z-index: 51;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
 }
