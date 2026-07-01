@@ -5,6 +5,15 @@ let aboutButton = document.querySelector("#aboutButton");
 let projectsButton = document.querySelector("#projectsButton");
 let contactButton = document.querySelector("#contactButton");
 
+let purdueTrain = document.querySelector(".train-image");
+let coalCar1 = document.querySelector("#cc1");
+let coalCar2 = document.querySelector("#cc2");
+let coalCar3 = document.querySelector("#cc3");
+let coalCar4 = document.querySelector("#cc4");
+let coalCar5 = document.querySelector("#cc5");
+let coalCar6 = document.querySelector("#cc6");
+
+let sun = document.querySelector(".sun-image");
 
 
 
@@ -17,6 +26,19 @@ window.addEventListener("scroll", function () {
         aboutButton.style.left = (scrollFraction * 100 - 30) + "%";
         projectsButton.style.left = (scrollFraction * 100 - 70) + "%";
         contactButton.style.left = (scrollFraction * 100 - 110) + "%";
+
+        purdueTrain.style.right = ((scrollFraction - 1.51) * 300 - 40) + "%";
+        coalCar1.style.right = ((scrollFraction - 1.51) * 300 - 48) + "%";
+        coalCar2.style.right = ((scrollFraction - 1.51) * 300 - 59) + "%";
+        coalCar3.style.right = ((scrollFraction - 1.51) * 300 - 70) + "%";
+        coalCar4.style.right = ((scrollFraction - 1.51) * 300 - 81) + "%";
+        coalCar5.style.right = ((scrollFraction - 1.51) * 300 - 92) + "%";
+        coalCar6.style.right = ((scrollFraction - 1.51) * 300 - 103) + "%";
+
+        //sun.style.left = ((scrollFraction - 2.8) * 300) + "%";
+        sun.style.top = ((scrollFraction - 2.8) * 100) - 10 + "%";
+
+
 
         if (scrollFraction > 1.34) {
             aboutButton.style.opacity = 0;
@@ -32,7 +54,7 @@ window.addEventListener("scroll", function () {
             contactButton.style.opacity = 1;
         }
 
-        // console.log(scrollFraction);
+        console.log(scrollFraction);
     }
 });
 // website for change

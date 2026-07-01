@@ -18,11 +18,11 @@ body {
 body {
     font-size: larger;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 
 .gradient {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.877) 10%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 10%, rgba(141, 90, 90, 0.8) 72%, rgba(144, 103, 110, 0.8) 76%, rgba(89, 89, 138, 0.8) 80%, rgba(0, 0, 0, 0.8) 90%);
     position: relative;
     /* background-color: #fbfbfbb8; */
     padding: 8px;
@@ -146,6 +146,32 @@ h3,
 h2 {
     text-align: center;
     z-index: 10;
+    padding-bottom: 35px;
+    border-bottom: 3px dashed black;
+    font-size: 6vh;
+}
+
+.train-container {
+    width: 100vw;
+    height: 20vh;
+    border-bottom: 4px black dashed;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.train-image {
+    height: 20vh;
+    position: absolute;
+    top: 1vh;
+    right: -40%;
+}
+
+.coal-image {
+    height: 25vh;
+    position: absolute;
+    top: 2vh;
+    right: -45%;
 }
 
 /*align sections left and allow wrap*/
@@ -172,7 +198,7 @@ h2 {
 
     padding: 2%;
     align-items: center;
-    z-index: 3;
+    z-index: 27;
 }
 
 /*class for images for side by side elements*/
@@ -209,7 +235,7 @@ h2 {
 
     position: sticky;
 
-    overflow:hidden;
+    overflow: hidden;
     z-index: 100;
 
     top: 0;
@@ -241,10 +267,11 @@ a {
     text-decoration: none;
     font-size: auto;
     z-index: 30;
+    /* font-weight: lighter; */
 }
 
 /*make it bold DOES NOT WORK*/
-a :hover {
+a:hover {
     font-weight: bolder;
 }
 
@@ -270,12 +297,13 @@ a :hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease;
 }
 
 .project-card:hover {
     transform: translateY(-3px);
     box-shadow: 6px 9px rgba(0, 0, 0, 0.15);
+    font-weight: bolder;
 }
 
 .project-image {
@@ -302,12 +330,21 @@ a :hover {
     cursor: pointer;
     height: 50vw;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease;
     overflow: hidden;
 }
 
 .resume-card-mini {
     height: 200px;
+    cursor: default;
+    padding: 3px;
+}
+
+.source-card {
+    height: 120px;
+    font-size: smaller;
+    line-height: 25px;
+    cursor: default;
 }
 
 
@@ -327,6 +364,7 @@ a :hover {
 .resume-card:hover {
     transform: translateY(-3px);
     box-shadow: 6px 9px rgba(0, 0, 0, 0.15);
+    font-weight: bolder;
 }
 
 .resume-icon {
@@ -339,4 +377,40 @@ a :hover {
 iframe {
     width: 100vw;
     height: 100vh;
+}
+
+.sunset-container{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 26;
+    overflow:hidden;
+}
+
+.sun-image {
+    height: 40vh;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+input{
+    border-radius: 8px;
+    width: 400px;
+    font-size: 15px;
+}
+
+button{
+    width: 100px;
+    font-size: larger;
+    border-radius: 8px;
+
+}
+
+.contact-icon{
+    width:50px;
+    border-radius: 50%;
 }
