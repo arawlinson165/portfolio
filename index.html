@@ -31,8 +31,12 @@
             <a href="#start" class="navbar-icon"
                 style="border-radius: 100%; aspect-ratio: 1; text-align: center; align-items: center;">AR</a>
             <a href="#about-me" class="navbar-icon">About Me</a>
-            <a href="#contact" class="navbar-icon">Contact</a>
             <a href="#projects" class="navbar-icon">Projects</a>
+            <a href="#resume" class="navbar-icon">Extrcurriculars</a>
+            <a href="#contact" class="navbar-icon">Contact</a>
+            <a href="#sources" class="navbar-icon">Sources</a>
+            <a class="navbar-icon" style="background-color: black; color:white;" id="light-dark">Light/dark</a>
+            
         </div>
 
         <h1 style="font-size: 7vw;" id="start">Alex Rawlinson's Portfolio</h1>
@@ -97,6 +101,7 @@
         <!-- ECs and Hobbies -->
         <div class="section" id="resume" style="justify-content: center; gap: 2%;">
             <h2 style="width: 100%;">Extracurriculars and Hobbies</h2>
+            
 
             <div class="section-text">
                 <div class="resume-card" id="scouts">
@@ -114,6 +119,12 @@
                     <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
                 </div>
 
+                <div class="resume-card resume-card-mini" style="margin-top: 2%;">
+                    <p>Signature School Robotics Club</p>
+                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2025-26</p>
+                    <p style="font-weight: lighter;">Served as President and revitalized the team</p>
+                </div>
+
             </div>
 
             <div class="section-text">
@@ -127,9 +138,15 @@
                 </div>
 
                 <div class="resume-card resume-card-mini" style="margin-top: 2%;">
-                    <p>Sample Card</p>
-                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2008-present</p>
-                    <p style="font-weight: lighter;">I made a sample card</p>
+                    <p>Speech and Debate</p>
+                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2022-26</p>
+                    <p style="font-weight: lighter;">Participated in Impromptu and World Schools Debate</p>
+                </div>
+
+                <div class="resume-card resume-card-mini" style="margin-top: 2%;">
+                    <p>Mock Trial</p>
+                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2024-26</p>
+                    <p style="font-weight: lighter;">Went to Indiana State tournament and played witness and lawyer roles</p>
                 </div>
             </div>
 
@@ -137,15 +154,22 @@
                 <div class="resume-card" id="travel-photos">
                     <img src="Carousel/TravelPhotos/IMG_3187.JPEG" class="resume-image" id="travel-img">
                     <p>Travel, Hiking, and Photography</p>
-                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2025-present</p>
+                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2014-present</p>
                     <p style="font-weight: lighter;">Tried to shoot everything but they didn't all turn out well</p>
                 </div>
 
                 <div class="resume-card resume-card-mini" style="margin-top: 2%;">
-                    <p>Sample Card</p>
-                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2008-present</p>
-                    <p style="font-weight: lighter;">I made a sample card</p>
+                    <p>Golf</p>
+                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2024-26</p>
+                    <p style="font-weight: lighter;">Competed in regional competitions and practiced with teammates</p>
                 </div>
+
+                <div class="resume-card resume-card-mini" style="margin-top: 2%;">
+                    <p>Trap and Skeet Shooting</p>
+                    <p style="font-weight: lighter; font-size: 2vh; font-style: italic;">2023-25</p>
+                    <p style="font-weight: lighter;">Went to state tournament and practiced with Boonville High School</p>
+                </div>
+
             </div>
         </div>
 
@@ -155,18 +179,25 @@
 
 
         <div class="section" id="contact">
-            <img src="Assets/hiking-trail.jpg" alt="my resume" class="section-image">
+            <h2 style="margin-right: 8px; width: 100%;">Contact</h2>
+            <!-- <img src="Assets/gmail-icon.svg.webp" alt="my resume" class="contact-icon"> -->
             <div class="section-text">
-                <h2 style="margin-right: 8px">Contact</h2>
+                
                 <p>Send me a message! I'd be happy to hear from you.</p>
-                <input placeholder="Your Name"><br>
-                <input placeholder="Message" style="height: 50px; margin-top: 10px;">
-                <button>Send</button>
+                <input placeholder="Your Name" id="mail-name"><br>
+                <input placeholder="Message" style="height: 50px; margin-top: 10px;" id="mail-message">
+                <button id="send-button">Send</button>
+            </div>
+
+            <div class="section-text" style="display: inline-flex">
+                <img src="Assets/gmail-icon.svg.webp" class="contact-icon" id="gmail" alt="Gmail logo">
+                <img src="Assets/github-icon.svg" class="contact-icon" id="github" alt="Github logo">
+                <img src="Assets/linkedin.png" class="contact-icon" id="linkedin" alt="Linkedin logo">
             </div>
             
         </div>
 
-        <div class="section" id="resume" style="justify-content: center; gap: 1%;">
+        <div class="section" id="sources" style="justify-content: center; gap: 1%;">
             <h2 style="width: 100%;">Sources</h2>
 
             <div class="section-text">
@@ -176,13 +207,13 @@
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Line Spacing</p>
+                    <p>Text Spacing</p>
                     <a href="https://www.w3schools.com/css/css_text_spacing.asp">W3Schools</a>
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>Portrait</p>
+                    <p style="font-weight: lighter;">Nextech</p>
                 </div>
 
             </div>
@@ -194,13 +225,14 @@
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>Line Height</p>
+                    <a href="https://www.w3schools.com/cssref/pr_dim_line-height.php">W3Schools</a>
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>Train car images</p>
+                    <a href="https://www.shutterstock.com/image-vector/black-silhouette-wagon-delivering-coal-mine-2696785239">Coal car, </a>
+                    <a href="https://www.reddit.com/r/CollegeBasketball/comments/1d12671/ranking_schools_logos_in_their_history_day_8/">locomotive</a>
                 </div>
             </div>
 
@@ -211,13 +243,13 @@
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>CSS Position</p>
+                    <a href="https://www.w3schools.com/css/css_position.asp">W3Schools</a>
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>Scroll to Scrub</p>
+                    <a href="https://www.youtube.com/watch?v=L1eu737bu70&t=15s">SuperHi and others</a>
                 </div>
             </div>
 
@@ -228,13 +260,13 @@
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>Sun Image</p>
+                    <a href="https://stock.adobe.com/search?k=sun+clipart">Adobe Stock photos</a>
                 </div>
 
                 <div class="resume-card source-card" style="margin-top: 2%;">
-                    <p>Nextect Catapult</p>
-                    <p style="font-weight: lighter;">Learned HTML, CSS, JavaScript, and career skills</p>
+                    <p>Train inspiration</p>
+                    <p style="font-weight: lighter;">Bhavya Patel</p>
                 </div>
 
             </div>

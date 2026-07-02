@@ -131,7 +131,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-    flex: 0 1 300px;
+    /* flex: 0 1 300px; */
     z-index: 10;
 }
 
@@ -225,7 +225,7 @@ h2 {
 .navbar {
     display: flex;
     justify-content: flex-start;
-    background-color: darkolivegreen;
+    background-color: rgba(94, 180, 87, 0.7);
     padding: 8px;
     margin: 8px;
     margin-top: 50px;
@@ -245,7 +245,7 @@ h2 {
 .navbar-icon {
     display: flex;
     justify-content: flex-start;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
     padding: 8px;
     margin-left: 8px;
@@ -281,7 +281,7 @@ a:hover {
     text-align: center;
     padding: 8px;
     margin: 1px;
-    color: black;
+    color: rgb(255, 255, 255);
     align-items: center;
     flex-grow: 1;
     z-index: 10;
@@ -379,14 +379,14 @@ iframe {
     height: 100vh;
 }
 
-.sunset-container{
+.sunset-container {
     width: 100vw;
     height: 60vh;
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
     z-index: 26;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .sun-image {
@@ -394,23 +394,25 @@ iframe {
     position: absolute;
     top: 90%;
     left: 50%;
-    transform:translateX(-50%)
+    transform: translateX(-50%)
 }
 
-input{
+input {
     border-radius: 8px;
-    width: 400px;
+    width: 500px;
     font-size: 15px;
 }
 
-button{
+button {
     width: 100px;
     font-size: larger;
     border-radius: 8px;
 
 }
 
-.contact-icon{
-    width:50px;
-    border-radius: 50%;
+.contact-icon {
+    width: 90px;
+    margin: 15px;
+    /* border-radius: 50%; */
+    /* aspect-ratio: 1; */
 }

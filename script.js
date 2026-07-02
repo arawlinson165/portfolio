@@ -70,7 +70,7 @@ chooseAdventure.addEventListener("click", function () {
 // RPS
 let rockPaperScissors = document.querySelector("#rock-paper-scissors");
 rockPaperScissors.addEventListener("click", function () {
-    window.location.href = "../projects/research-paper.html";
+    window.location.href = "../projects/rock-paper-scissors/index.html";
 });
 // Research
 let researchPaper = document.querySelector("#research-paper");
@@ -126,6 +126,92 @@ travel.addEventListener("click", function () {
 });
 
 
-// video.addEventListener('loadedmetadata', () => {
-//     video.currentTime = 0;
-// });
+let sendButton = document.querySelector("#send-button");
+let mailName = document.querySelector("#mail-name");
+let mailMessage = document.querySelector("#mail-message");
+
+
+sendButton.addEventListener("click", function () {
+
+    console.log(mailName.value)
+
+    mailName.value = "";
+    mailMessage.value = "";
+});
+
+
+let gmail = document.querySelector("#gmail");
+gmail.addEventListener("click", function () {
+    window.location.href = "mailto:someone@example.co";
+});
+
+let github = document.querySelector("#github");
+github.addEventListener("click", function () {
+    window.location.href = "https://github.com/arawlinson165";
+});
+
+let linkedin = document.querySelector("#linkedin");
+linkedin.addEventListener("click", function () {
+    window.location.href = "https://www.linkedin.com/in/alex-rawlinson-279492311";
+});
+
+
+let dark = false;
+let lightDark = document.querySelector("#light-dark");
+lightDark.addEventListener("click", function () {
+    if (!dark) {
+        let sections = document.querySelectorAll(".section");
+        sections.forEach(element => {
+            element.style = "background-color:black; color:white;";
+        });
+
+        document.querySelectorAll("a").forEach(element => {
+            element.style = "color:white;";
+        });
+
+        document.querySelectorAll("h2, h3").forEach(element => {
+            element.style = "border-color: white; width: 100%;";
+        });
+
+        document.querySelectorAll(".navbar").forEach(element => {
+            element.style = "background-color:black;";
+        });
+
+        document.querySelectorAll(".navbar-icon").forEach(element => {
+            element.style = "background-color:#1A1A1A; color:white;";
+        });
+
+        document.querySelectorAll(".project-card").forEach(element => {
+            element.style = "background-color:#1A1A1A; color:white;";
+        });
+        dark = true;
+    } else {
+        let sections = document.querySelectorAll(".section");
+        sections.forEach(element => {
+            element.style = "background-color:white; color:black;";
+        });
+
+        document.querySelectorAll("a").forEach(element => {
+            element.style = "color:black;";
+        });
+
+        document.querySelectorAll("h2, h3").forEach(element => {
+            element.style = "border-color: black; width: 100%;";
+        });
+
+        document.querySelectorAll(".navbar").forEach(element => {
+            element.style = "background-color:white;";
+        });
+
+        document.querySelectorAll(".navbar-icon").forEach(element => {
+            element.style = "background-color: beige; color:black;";
+        });
+
+        document.querySelectorAll(".project-card").forEach(element => {
+            element.style = "background-color:beige; color:black;";
+        });
+    }
+
+
+});
+
